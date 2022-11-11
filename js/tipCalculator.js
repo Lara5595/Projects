@@ -20,3 +20,5 @@ function calculateBill(){
     const tipPercentage = Number(tipInput.value) / 100;
 
 }
+
+// Still need to work on it
