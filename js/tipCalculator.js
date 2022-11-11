@@ -1,26 +1,22 @@
+// I am creating variables so we can access the inputs and buttons
 
-// I am getting the bill input
+const billInput = document.getElementById("billInput");
 
-$("#billTotalInput").click(function (){
-    alert("hello")
-});
+const tipInput = document.getElementById("tipInput")
 
-// I am getting the tip input
+const numberOfPeopleDiv = document.getElementById("numberOfPeople")
 
-$("#tipInput").click(function (){
-    alert(("whatup"))
-})
+const perPersonTotalDiv = document.getElementById("perPersonTotal")
 
 
-// buttons
 
-$(".buttonText").click(function (){
-    alert("itwork")
-})
+let numberOfPeople = Number(numberOfPeopleDiv.innerText)
+console.log(numberOfPeople)
 
 
-// Total
 
-$("#perPersonTotal").hover(function (){
-    // alert("total")
-})
+function calculateBill(){
+    const bill = Number(billInput.value)
+    const tipPercentage = Number(tipInput.value) / 100;
+
+}
