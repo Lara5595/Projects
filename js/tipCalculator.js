@@ -1,6 +1,6 @@
 // I am creating variables so we can access the inputs and buttons
 
-const billInput = document.getElementById("billInput");
+const billInput = document.getElementById("billTotalInput");
 
 const tipInput = document.getElementById("tipInput")
 
@@ -17,9 +17,10 @@ console.log(numberOfPeople)
 
 function calculateBill(){
     const bill = Number(billInput.value)
+
     const tipPercentage = Number(tipInput.value) / 100;
     const total = bill + tipPercentage;
-
+    console.log(total)
 
 
 }
