@@ -20,8 +20,8 @@ console.log(numberOfPeople)
 function calculateBill(){
     const bill = Number(billInput.value)
     const tipPercentage = Number(tipInput.value) / 100;
-    const total = bill + tipPercentage;
-
+    const tipAmount = bill * tipPercentage;
+    const total = bill + tipAmount;
     const perPersonTotal = total / numberOfPeople;
     console.log(perPersonTotal)
     perPersonTotalDiv.innerText = `$${perPersonTotal.toFixed(2)}`
