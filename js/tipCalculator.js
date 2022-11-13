@@ -27,4 +27,8 @@ function calculateBill(){
     perPersonTotalDiv.innerText = `$${perPersonTotal.toFixed(2)}`
 }
 
-// Still need to work on it
+
+function decreasePeople(){
+    numberOfPeople --
+
+}
