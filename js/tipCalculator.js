@@ -29,6 +29,17 @@ function calculateBill(){
 
 
 function decreasePeople(){
+    if (numberOfPeople <= 1){
+        alert("You can't go below 1")
+        return
+    }
     numberOfPeople --
+    numberOfPeopleDiv.innerText = numberOfPeople
+    calculateBill();
+}
 
+function increasePeople() {
+    numberOfPeople ++
+    numberOfPeopleDiv.innerText = numberOfPeople
+    calculateBill()
 }
