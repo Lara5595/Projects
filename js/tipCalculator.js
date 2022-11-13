@@ -24,7 +24,7 @@ function calculateBill(){
 
     const perPersonTotal = total / numberOfPeople;
     console.log(perPersonTotal)
-
+    perPersonTotalDiv.innerText = `$${perPersonTotal.toFixed(2)}`
 }
 
 // Still need to work on it
